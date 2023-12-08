@@ -1,0 +1,152 @@
+<html>
+
+<head>
+    <title> Fancy Number Allocation </title>
+    <link rel="Stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo234.png" width="190" height="90">
+        </div>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Online Services</a></li>
+                <li><a href="#">Information Services</a></li>
+                <li><a href="#">Dashboard & Report</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="Container">
+        <form id="Form1">
+            <h3> LOGIN </h3>
+            <input type="text" placeholder="User ID" >
+            <input type="text" placeholder="Password" >
+            <input type="text" placeholder="Verification Code" >
+
+
+            <div class="btn-box">
+                <button type="button" id="Next1">Next</button>
+
+            </div>
+        </form>
+
+        <form id="Form2">
+                   
+            <input type="text" placeholder="State" >
+            <input type="text" placeholder="RTO office" >
+            <input type="text" placeholder="Action type" >
+           
+
+            <div class="btn-box">
+                <button type="button" id="Back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+
+            </div>
+        </form>
+
+        <form id="Form3">
+            <input type="text" placeholder="Registration Mark" required >
+            <input type="text" placeholder="Number" required >
+            <input type="text" placeholder="Reserve Price" required >
+            <input type="text" placeholder="Bid amount" required >
+            
+
+            <div class="btn-box">
+                <button type="button" id="Back2">Back</button>
+                <button type="Submit">Submit</button>
+
+            </div>
+        </form>
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>step 1</small></div>
+            <div class="step-col"><small>step 2</small></div>
+            <div class="step-col"><small>step 3</small></div>
+
+        </div>
+
+<script>
+        var Form1 = document.getElementById("Form1");
+    var Form2 = document.getElementById("Form2");
+    var Form3 = document.getElementById("Form3");
+
+    var Next1 = document.getElementById("Next1");
+    var Next2 = document.getElementById("Next2");
+    var Back1 = document.getElementById("Back1");
+    var Back2 = document.getElementById("Back2");
+
+    var progress = document.getElementById("progress");
+
+    
+    Next1.onclick = function(){
+        Form1.style.left = "-450px";
+        Form2.style.left = "40px";
+        progress.style.width = "240px";
+    }
+
+    Back1.onclick = function(){
+        Form1.style.left = "40px";
+        Form2.style.left = "-450px";
+        progress.style.width = "120px";
+    }
+
+    Next2.onclick = function(){
+        Form2.style.left = "-450px";
+        Form3.style.left = "40px";
+        progress.style.width = "360px";
+    }
+
+    Back2.onclick = function(){
+        Form2.style.left = "40px";
+        Form3.style.left = "-450px";
+        progress.style.width = "240px";
+    }
+
+
+</script>
+
+
+
+    </div>
+    <br>
+    <footer>
+        <div class="footer-container">
+            <div class="footer">
+                <div class="footer-heading footer-1">
+                    <h2>Terms and Policies</h2>
+                    <a href="#">privacy policy</a>
+                    <a href="#">Hyperlink policy</a>
+                    <a href="#">Website Policy</a>
+                    <a href="#">Content Policy</a>
+                </div>
+               
+                    <div class="footer-heading footer-2">
+                        <h2>Resources</h2>
+                        <a href="#">Fees & User charge</a>
+                        <a href="#">Act, Rules & Policies</a>
+                        <a href="#">Permit Fees & Period</a>
+                        <a href="#">Manual</a>
+                    </div>
+                    <div class="footer-heading footer-3">
+                        <h2>Need Help</h2>
+                        <a href="#">Contact User</a>
+                        <a href="#">Frequently Asked Question</a>
+                        <a href="#">Reise a concern</a>
+                        <a href="#">Feedback</a>
+                    </div>
+                    <div class="footer-23">
+                        <p>Made By Yogesh Navghane </p>
+                    </div>
+                </div>
+             
+            </div>
+    </footer>
+</body>
+
+</html>
